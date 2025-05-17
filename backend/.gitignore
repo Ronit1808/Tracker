@@ -52,3 +52,4 @@ sessions/
 
 # Uploaded files (optional, only if stored locally)
 uploads/
+".env" 

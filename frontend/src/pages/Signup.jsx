@@ -70,7 +70,7 @@ export default function Signup() {
     setLoading(true);
     try {
       const { confirmPassword, ...dataToSubmit } = formData;
-      await axios.post('http://localhost:5000/api/auth/signup', dataToSubmit);
+      await axios.post('https://tracker-auqp.onrender.comapi/auth/signup', dataToSubmit);
       navigate('/');
     } catch (err) {
       console.error('Signup error:', err.response?.data || err.message);
