@@ -17,7 +17,7 @@ const ProjectTasks = () => {
     const fetchTasks = async () => {
         setLoading(true);
         try {
-            const res = await axios.get(`https://tracker-auqp.onrender.comapi/tasks/${projectId}`, {
+            const res = await axios.get(`https://tracker-auqp.onrender.com/api/tasks/${projectId}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             console.log('Fetched tasks:', res.data);
@@ -38,7 +38,7 @@ const ProjectTasks = () => {
         }
         
         try {
-            const res = await axios.post(`https://tracker-auqp.onrender.comapi/tasks/${projectId}`, form, {
+            const res = await axios.post(`https://tracker-auqp.onrender.com/api/tasks/${projectId}`, form, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             console.log('Created task:', res.data);
@@ -71,7 +71,7 @@ const ProjectTasks = () => {
         
         try {
             await axios.put(
-                `https://tracker-auqp.onrender.comapi/tasks/${taskId}`,
+                `https://tracker-auqp.onrender.com/api/tasks/${taskId}`,
                 editForm,
                 {
                     headers: { Authorization: `Bearer ${token}` },
@@ -91,7 +91,7 @@ const ProjectTasks = () => {
         }
         
         try {
-            await axios.delete(`https://tracker-auqp.onrender.comapi/tasks/${taskId}`, {
+            await axios.delete(`https://tracker-auqp.onrender.com/api/tasks/${taskId}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setTasks((prev) => prev.filter((t) => t._id !== taskId));

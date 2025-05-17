@@ -19,7 +19,7 @@ const Dashboard = () => {
   const fetchProjects = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('https://tracker-auqp.onrender.comapi/projects', {
+      const res = await axios.get('https://tracker-auqp.onrender.com/api/projects', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProjects(res.data);
@@ -40,7 +40,7 @@ const Dashboard = () => {
     
     setCreateLoading(true);
     try {
-      const res = await axios.post('https://tracker-auqp.onrender.comapi/projects', { title }, {
+      const res = await axios.post('https://tracker-auqp.onrender.com/api/projects', { title }, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProjects([...projects, res.data]);
