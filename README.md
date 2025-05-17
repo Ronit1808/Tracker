@@ -75,4 +75,10 @@ A simple task management app where users can:
 
 - DELETE /api/tasks/:taskId - Delete task
 
+## Deployment
+- Frontend deployed on Netlify
+- Backend deployed on Render
 
+## Live Link
+- https://tracker18.netlify.app/
+  
