@@ -79,6 +79,6 @@ A simple task management app where users can:
 - Frontend deployed on Netlify
 - Backend deployed on Render
 
-## Live Link
+## Live Link (login with email- john@example.com , password- 123456)
 - https://tracker18.netlify.app/
   
